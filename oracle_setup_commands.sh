@@ -1,7 +1,7 @@
 #!/bin/bash -x 
 
-old_ip_address="127.0.0.1"
-ip_address="10.211.55.17"
+old_ip_address="<OLD_IP_ADDRESS_HERE>"
+ip_address="<NEW_IP_ADDRESS_HERE>"
 
 sed -i -e "s/${old_ip_address}/${ip_address}/g" $ORACLE_HOME/network/admin/tnsnames.ora
 
