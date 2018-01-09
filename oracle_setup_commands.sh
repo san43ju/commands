@@ -23,5 +23,5 @@ sed -i -e "s/${old_ip_address}/${ip_address}/g" $ORACLE_HOME/sysman/config/emd.p
 
 echo ""
 echo "Changed emd:"
-cat $ORACLE_HOME/sysman/config/emd.properties
+grep ${ip_address} $ORACLE_HOME/sysman/config/emd.properties
 echo ""
